@@ -458,6 +458,7 @@ const Form = () => {
         </form>
       </div>
       <div className="sentence-Box">
+        <h5>Fill the form to see result:</h5>
         {name.map((e) => (
           <p>
            <b> {name}</b> is looking to <b>{stage}</b> their business of <b>{idea}</b>
