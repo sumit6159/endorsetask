@@ -2,22 +2,26 @@
     display: flex;
     justify-content: space-between;
     height: max-content;
- 
+   
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+   
 }
 .formbox{
     height: max-content;
     border: 1px solid black;
     padding: 1%;
+    flex: 1;
+    background-color:rgb(234, 173, 151);
    
 }
 .sentence-Box{
+    flex: 1;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     height: max-content;
-    
+    padding: 1%;
     margin-left: 10%;
+    background-color:rgb(234, 173, 151);
 }

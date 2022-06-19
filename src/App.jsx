@@ -1,12 +1,14 @@
 
+import './App.css'
+import Form from './components/Form';
 
-import AllRoutes from './routes/AllRoutes';
 
 function App() {
   return (
-    <>
-   <AllRoutes/>
-    </>
+    <div className='App'>
+      <h1>Let's Endorse Assignment</h1>
+   <Form/>
+    </div>
   );
 }
 

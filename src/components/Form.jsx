@@ -99,6 +99,7 @@ const Form = () => {
     setProcessedProduct([e.target.value]);
   };
   const experienceHandler = (e) => {
+   
     setExp([e.target.value]);
   };
   const skillHandler = (e) => {
@@ -169,6 +170,7 @@ const Form = () => {
           <label htmlFor="name">Name:</label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="text"
             placeholder="enter your name"
             onInput={nameHandler}
@@ -180,7 +182,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={selectHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="Start-up">Start-up</option>
@@ -189,6 +191,7 @@ const Form = () => {
           <label htmlFor="businessIdea">Idea:</label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="text"
             placeholder="enter your business_idea"
             onInput={ideaHandler}
@@ -200,12 +203,13 @@ const Form = () => {
           </label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="number"
             placeholder="age of establishment"
             max="100"
             min="0"
             onChange={ageHandler}
-            style={{ width: "50%" }}
+            
           />
           <br></br>
           <hr />
@@ -214,6 +218,7 @@ const Form = () => {
           </label>
           <br></br>
           <input
+         
             type="text"
             placeholder="branded mobile phones, repair of laptop batteries, fresh kadak tea, authentic Indian cuisine, full-fat milk, fresh vegetables and fruits, stitching and alteration of garments, ladies wear (like salwar kurta, banarasi saree, nightsuites, etc.), facial, massage, high quality seeds, etc."
             onChange={offerHandler}
@@ -226,7 +231,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={selectHandler1}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="End customers">End customers</option>
@@ -241,6 +246,7 @@ const Form = () => {
           </label>
           <br></br>
           <input
+         
             type="text"
             placeholder="photocopy services, mobile recharge services, transportation of goods to customers, custom fitting of dresses, bridal makeup, agriculture equipments on rent, fish pickles, etc."
             onInput={secondaryServiceHandler}
@@ -252,6 +258,7 @@ const Form = () => {
           </label>
           <br></br>
           <input
+         
             type="text"
             placeholder="paneer, protein bars, juice, etc."
             onInput={processedProductHandler}
@@ -263,9 +270,11 @@ const Form = () => {
           </label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="number"
             placeholder="enter experience"
             onInput={experienceHandler}
+            min='0'
           />
           <br></br>
           <hr />
@@ -275,7 +284,8 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={skillHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
+            
           >
             <option></option>
             <option  value="No formal skill training">
@@ -296,7 +306,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={estabTypeHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="Factory">Factory</option>
@@ -311,6 +321,7 @@ const Form = () => {
           <label htmlFor="business_are">Name of the Area:</label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="text"
             placeholder="Sadar Bazar Colony, laxmi market"
             onInput={areaNameHandler}
@@ -322,7 +333,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={localityHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="urban">urban</option>
@@ -336,7 +347,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={infraHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="rented">rented</option>
@@ -349,12 +360,13 @@ const Form = () => {
           </label>
           <br></br>
           <input
+         
             type="number"
             placeholder="area in sq.feet"
            
             min="0"
             onChange={areaHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           />
           <br></br>
           <hr />
@@ -368,7 +380,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={researchHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="Not conducted">Not conducted</option>
@@ -382,7 +394,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={primaryMarketHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="local">local</option>
@@ -394,6 +406,7 @@ const Form = () => {
           <label htmlFor="customers">Customers:</label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="text"
             placeholder="School-going students, collge-going students, housewives, truck-drivers, etc."
             onInput={customerHandler}
@@ -405,7 +418,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={saleHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="consistent sales across all season">consistent sales across all season</option>
@@ -419,7 +432,7 @@ const Form = () => {
             className="form-select"
             aria-label="Default select example"
             onChange={competitionHandler}
-            style={{ width: "50%" }}
+            style={{ width: "100%", }}
           >
             <option></option>
             <option value="No similar service provide in this locality">No similar service provide in this locality</option>
@@ -430,6 +443,7 @@ const Form = () => {
           <label htmlFor="suppliers">List of Suppliers:</label>
           <br></br>
           <input
+          style={{ width: "100%", }}
             type="text"
             placeholder="E.g. identfiied distributor in the district, Kolkata flea market, etc."
             onInput={supplierHandler}
@@ -446,73 +460,73 @@ const Form = () => {
       <div className="sentence-Box">
         {name.map((e) => (
           <p>
-            {name} is looking to {stage} their business of {idea}
+           <b> {name}</b> is looking to <b>{stage}</b> their business of <b>{idea}</b>
           </p>
         ))}
         {age.map((e) => (
           <p>
-            This enterprise has been operational since {e} years and has been
+            This enterprise has been operational since  <b>{e}</b> years and has been
             serving its customers since then.
           </p>
         ))}
         {offer.map((e) => (
           <p>
-            This establishment offers products/services like- {offer} to{" "}
-            {service}.
+            This establishment offers products/services like- <b>{offer}</b> to
+            <b>{service}</b>.
           </p>
         ))}
         {secondaryService.map((e) => (
-          <p>In addition, the enterprise shall also be involved in- {e}</p>
+          <p>In addition, the enterprise shall also be involved in- <b>{e}</b></p>
         ))}
         {processedProduct.map((e) => (
-          <p>Other products of the enterprise shall include- {e}</p>
+          <p>Other products of the enterprise shall include- <b>{e}</b></p>
         ))}
         {exp.map((e) => (
           <p>
-            {name} has relevant experience of {e} years in this field.{" "}
+            <b>{name}</b> has relevant experience of <b>{e}</b> years in this field.
           </p>
         ))}
         {skill.map((e) => (
-          <p>The entrepreneur {e} in this field of work.</p>
+          <p>The entrepreneur <b>{e}</b> in this field of work.</p>
         ))}
         {skill.map((e)=>(
-          <p>The enterprise is uniquely positioned because of its -{usps} </p>
+          <p>The enterprise is uniquely positioned because of its - <b>{usps}</b> </p>
         ))}
         {type.map((e)=>(
-          <p>The {e} is located in {locality} area of {areaName} is a {owner} property.
+          <p>The <b>{e}</b> is located in <b>{locality}</b> area of <b>{areaName}</b> is a <b>{owner}</b> property.
 
 
           </p>
         ))}
         {area.map((e)=>(
-          <p>The size of the establishment is {e} sq.ft.</p>
+          <p>The size of the establishment is  <b>{e}</b> sq.ft.</p>
         ))}
          {area.map((e)=>(
           <p>This locality is selected because of {location}.</p>
         ))}
         {market.map((e)=>(
-          <p>{e} and the range of products and target market has been identified after that.</p>
+          <p> <b>{e}</b> and the range of products and target market has been identified after that.</p>
         ))}
           {primaryMarket.map((e)=>(
-          <p>The enterprise shall focus on offering its products/services to {e} markets. </p>
+          <p>The enterprise shall focus on offering its products/services to  <b>{e}</b> markets. </p>
         ))}
          {customer.map((e)=>(
-          <p> Our customers shall include- {e}</p>
+          <p> Our customers shall include-  <b>{e}</b></p>
         ))}
           {sale.map((e)=>(
-          <p>The nature of the business is such that we expect {e}. </p>
+          <p>The nature of the business is such that we expect  <b>{e}</b>. </p>
         ))}
            {competition.map((e)=>(
-          <p>Regarding competition, there are {e}.</p>
+          <p>Regarding competition, there are  <b>{e}</b>.</p>
         ))}
           {supplier.map((e)=>(
-          <p>The enterprise shall procure goods/raw materials from {e}. </p>
+          <p>The enterprise shall procure goods/raw materials from  <b>{e}</b>. </p>
         ))}
           {supplier.map((e)=>(
-          <p>Our marketing avenues to reach the targeted customers shall include- {avenue}. </p>
+          <p>Our marketing avenues to reach the targeted customers shall include- <b>{avenue}</b>. </p>
         ))}
           {supplier.map((e)=>(
-          <p>The various foreseeable avenues of scaling up and growing the business in the foreseeable future include- {scale}. </p>
+          <p>The various foreseeable avenues of scaling up and growing the business in the foreseeable future include- <b>{scale}</b>. </p>
         ))}
       </div>
     </div>
