@@ -1,9 +1,23 @@
 .container{
     display: flex;
     justify-content: space-between;
+    height: max-content;
+ 
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.formbox{
+    height: max-content;
+    border: 1px solid black;
+    padding: 1%;
+   
 }
 .sentence-Box{
-   
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
+    height: max-content;
+    
+    margin-left: 10%;
 }
